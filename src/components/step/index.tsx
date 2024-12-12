@@ -7,15 +7,16 @@ import { colors } from "@/styles/theme";
 type Props = {
   title: string;
   description: string;
+  icon: React.ComponentType<IconProps>
 };
 
-export default function Step(props: Props) {
+export default function Step({title, description, icon: Icon}: Props) {
   return (
     <View style={s.container}>
-      <IconQrcode size={32} color={colors.red.base} />
+      {Icon && <Icon size={32} color={colors.red.base} />}
       <View style={s.details}>
-        <Text style={s.title}>{props.title}</Text>
-        <Text style={s.description}>{props.description}</Text>
+        <Text style={s.title}>{title}</Text>
+        <Text style={s.description}>{description}</Text>
       </View>
     </View>
   );
