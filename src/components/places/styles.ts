@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { colors, fontFamily} from '@/styles/theme'
+import BottomSheet from "@gorhom/bottom-sheet";
 
 export const s = StyleSheet.create({
     container: {
@@ -18,8 +19,8 @@ export const s = StyleSheet.create({
     },
     title: {
         color: colors.gray[600],
-        fontSize: 16,
-        fontFamily: fontFamily.regular,
+        fontSize: 18,
+        fontFamily: fontFamily.bold,
         marginBottom: 16,
-    }
+    },
 })

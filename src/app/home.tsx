@@ -49,7 +49,7 @@ export default function Home() {
   }, [category]);
 
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: '#CCC' }}>
       <Categories
         data={categories}
         onSelect={setCategory}
